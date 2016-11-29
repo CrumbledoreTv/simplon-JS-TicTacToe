@@ -1,0 +1,82 @@
+@font-face {
+    font-family: GreatVibes;
+    src: url(../FONTS/GreatVibes-Regular.otf);
+}
+
+body {
+    background-image: url('../IMG/pattern1.jpg');
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: GreatVibes;
+}
+
+#turn {
+    position: absolute;
+    left: 80px;
+    top: -100px;
+}
+#score{
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 150px;
+  left: 300px;
+  color: white;
+}
+table {
+    width: 250px;
+    height: 250px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+#mid {
+    position: relative;
+    left: 550px;
+    top: 80px;
+    width: 250px;
+}
+
+#win {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100px;
+    height: 20px;
+    left: 835px;
+    top: 340px;
+}
+
+p {
+    font-family: GreatVibes;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#play {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+#reset{
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 240px;
+  left: 196px;
+}

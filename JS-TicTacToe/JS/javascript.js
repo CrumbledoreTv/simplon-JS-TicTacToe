@@ -1,3 +1,7 @@
+/*****************************************************************************/
+/*                          VARIABLE                                         */
+/*****************************************************************************/
+
 var tab = document.getElementById('tableau');
 var cells = tab.getElementsByTagName('td');
 var h2 = document.getElementById('turn');
@@ -7,7 +11,10 @@ var score = document.getElementById('score')
 
 var scP1 = 0;
 var scP2 = 0;
+/****************************************************************************/
 
+
+// Fonction abandon **************************************************/
 function reset() {
 tab.innerHTML = "";
 h2.innerHTML = "";
@@ -20,6 +27,7 @@ score.innerHTML = "P1 : " +scP1+ " <br> " +" P2 : "+scP2;
 play();
 }
 
+// Fonction new game **********************************************/
 function play() {
 tab.innerHTML = "";
 h2.innerHTML = "";
@@ -39,6 +47,7 @@ win.innerHTML = "";
 var p1 = true;
 var p2 = false;
 
+// Tic Tac Toe *******************************************************/
 function game(e) {
     if (e.target.style.color == "blue") {
         e.target.style.color = "blue";
@@ -70,6 +79,7 @@ function game(e) {
     combinaison(6, 4, 2);
 }
 
+// Winner *************************************************************/
 function combinaison(a, b, c) {
     if (cells[a].innerHTML == "O" && cells[b].innerHTML == "O" && cells[c].innerHTML == "O") {
         win.style.visibility = "visible";

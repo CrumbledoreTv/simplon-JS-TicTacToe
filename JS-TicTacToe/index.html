@@ -9,15 +9,24 @@
 
 <body>
     <h1>Tic Tac Toe</h1>
-<input id="play" type="button" onClick="play()" value="PLAY">
-<input id="reset" type="button" onClick="reset()" value="ABANDON">
+
+    <!-- BOUTON -->
+    <input id="play" type="button" onClick="play()" value="PLAY">
+    <input id="reset" type="button" onClick="reset()" value="ABANDON">
+
+    <!-- DIV VICTOIRE -->
     <div id="win"></div>
 
     <div id="mid">
+
+        <!-- PLAYER 1 OU PLAYER 2 -->
         <h2 id="turn"></h2>
+
+        <!-- SCORE -->
         <h2 id="score"></h2>
-        <table id="tableau">
-        </table>
+
+        <!-- TABLEAU -->
+        <table id="tableau"></table>
     </div>
 
     <script src="JS/javascript.js"></script>
